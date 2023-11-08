@@ -22,10 +22,10 @@ class ORM {
   
   class Pessoa extends ORM {
     static pessoas = [];
-    static idCounter = 1;
+    static ID = 1;
   
     static criar(nome, idade, cidade) {
-      const novaPessoa = { id: this.idCounter++, nome, idade, cidade };
+      const novaPessoa = { id: this.ID++, nome, idade, cidade };
       this.pessoas.push(novaPessoa);
     }
   
@@ -67,10 +67,10 @@ class ORM {
   
   class Animal extends ORM {
     static animais = [];
-    static idCounter = 1;
+    static ID = 1;
   
     static criar(nome, som, tipo) {
-      const novoAnimal = { id: this.idCounter++, nome, som, tipo };
+      const novoAnimal = { id: this.ID++, nome, som, tipo };
       this.animais.push(novoAnimal);
     }
   
@@ -125,8 +125,8 @@ class ORM {
   console.table(animais);
   
   /// Editar
-  //Pessoa.editar(1, { nome: "Vitor", idade: 24, cidade: "Outra Cidade" });
-  //Animal.editar(2, { nome: "Maximus", som: "Grrr" });
+  //Pessoa.editar(1, { nome: "Vitor", idade: 24, cidade: "Rosana" });
+  //Animal.editar(2, { nome: "Maximus", som: "Grrr", tipo: "Dinossauro" });
   
   // Excluir
   //Pessoa.excluir(2);
@@ -134,17 +134,17 @@ class ORM {
   
   // Listar após edição e exclusão
   //const pessoasAtualizadas = Pessoa.listar();
-  //console.log(pessoasAtualizadas);
+  //console.table(pessoasAtualizadas);
   //const animaisAtualizados = Animal.listar();
   //console.table(animaisAtualizados);
   
   // Atualizar
-  //Pessoa.atualizar(1, "Vitor", 25, "Outra Cidade");
-  //Animal.atualizar(2, "Maximus", "Woof");
+  //Pessoa.atualizar(1, "Vitor", 25, "São Paulo");
+  //Animal.atualizar(2, "Maximus", "Auuu", "Lobo");
   
   // Listar após atualização
   //const pessoasAtualizadasNovamente = Pessoa.listar();
- // console.log(pessoasAtualizadasNovamente);
+  //console.table(pessoasAtualizadasNovamente);
   //const animaisAtualizadosNovamente = Animal.listar();
   //console.table(animaisAtualizadosNovamente);
   
