@@ -1,22 +1,22 @@
 class ORM {
     criar() {
-      throw new Error("Método 'criar' deve ser implementado.");
+      throw new Error("Método criar não foi implementado.");
     }
   
     editar() {
-      throw new Error("Método 'editar' deve ser implementado.");
+      throw new Error("Método editar não foi implementado.");
     }
   
     excluir() {
-      throw new Error("Método 'excluir' deve ser implementado.");
+      throw new Error("Método excluir não foi implementado.");
     }
   
     listar() {
-      throw new Error("Método 'listar' deve ser implementado.");
+      throw new Error("Método listar não foi implementado.");
     }
   
     atualizar() {
-      throw new Error("Método 'atualizar' deve ser implementado.");
+      throw new Error("Método atualizar não foi implementado.");
     }
   }
   
